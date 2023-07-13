@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Narnoor&family=Noto+Serif+Makasar&family=Ubuntu&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../background");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 9px;
+    right: 80px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Narnoor', serif;
+    font-family: 'Noto Serif Makasar', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+#scoreBox{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Narnoor', serif;
+    font-family: 'Noto Serif Makasar', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+#board {
+    background: linear-gradient(rgb(250, 207, 164), rgb(211, 211, 121));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(red, yellow);
+    border: .25 vmin solid purple;
+    border-radius: 9px;
+    transform: scale(1.03);
+}
+
+.snake {
+    background: linear-gradient(red, yellow);
+    border: .25 vmin solid black;
+    border-radius: 15px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25 vmin solid white;
+    border-radius: 20px;
+}
